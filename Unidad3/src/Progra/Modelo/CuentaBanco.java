@@ -1,89 +1,84 @@
 package Modelo;
 
-import java.time.LocalDate;
-
 public class CuentaBanco {
-	private int idCuenta;
-	private double saldo;
-	private LocalDate fechaApertura;
-	private String iban;
-	private Cliente clienteTitular;
-	private Cliente clienteAutorizado;
-	private static int contador;
-
-	public CuentaBanco(double saldo, LocalDate fechaApertura, String iban, Cliente clienteTitular,
-			Cliente clienteAutorizado) {
+	public CuentaBanco(double saldo, String numCuenta, Personas titular) {
 		super();
-		this.idCuenta = contador + 1;
 		this.saldo = saldo;
-		this.fechaApertura = fechaApertura;
-		this.iban = iban;
-		this.clienteTitular = clienteTitular;
-	    this.clienteAutorizado = clienteAutorizado;
-	    contador = contador + 1;
+		this.numCuenta = numCuenta;
+		this.titular = titular;
+		this.autorizado = autorizado;
 	}
 
-	protected int getIdCuenta() {
-		return idCuenta;
-	}
-
-	protected void setIdCuenta(int idCuenta) {
-		this.idCuenta = idCuenta;
-	}
-
-	protected double getSaldo() {
+	public double getSaldo() {
 		return saldo;
 	}
 
-	protected void setSaldo(double saldo) {
+	private void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 
-	
-
-	@Override
-	public String toString() {
-		return "CuentaBanco [idCuenta=" + idCuenta + ", saldo=" + saldo + ", fechaApertura=" + fechaApertura + ", iban="
-				+ iban + ", clienteTitular=" + clienteTitular + ", clienteAutorizado=" + clienteAutorizado + "]";
+	public String getNumCuenta() {
+		return numCuenta;
 	}
 
-	public LocalDate getFechaApertura() {
-		return fechaApertura;
+	public void setNumCuenta(String numCuenta) {
+		this.numCuenta = numCuenta;
 	}
 
-	public void setFechaApertura(LocalDate fechaApertura) {
-		this.fechaApertura = fechaApertura;
+	public Personas getTitular() {
+		return titular;
 	}
 
-	public String getIban() {
-		return iban;
+	public void setTitular(Personas titular) {
+		this.titular = titular;
 	}
 
-	public void setIban(String iban) {
-		this.iban = iban;
+	public Personas getAutorizado() {
+		return autorizado;
 	}
 
-	public Cliente getClienteTitular() {
-		return clienteTitular;
+	public void setAutorizado(Personas autorizado) {
+		this.autorizado = autorizado;
 	}
 
-	public void setClienteTitular(Cliente clienteTitular) {
-		this.clienteTitular = clienteTitular;
+	private double saldo;
+	private String numCuenta;
+	private Personas titular;
+	private Personas autorizado;
+
+	private boolean validaImportePositivo(double importe) {
+		return importe > 0;
 	}
 
-	public Cliente getClienteAutorizado() {
-		return clienteAutorizado;
+	private boolean validarAutorizado(String dni) {
+		return dni != null && dni.equals(autorizado.getDni());
 	}
 
-	public void setClienteAutorizado(Cliente clienteAutorizado) {
-		this.clienteAutorizado = clienteAutorizado;
+	public void ingresarDinero(Personas personaGestion, double ingreso) {
+		if (validarAutorizado(personaGestion.getDni()) && validaImportePositivo(ingreso)) {
+			setSaldo(getSaldo() + ingreso);
+		}
+
+		else {
+			System.out.println("error");
+		}
 	}
 
-	public static int getContador() {
-		return contador;
+	public void retirarDinero(Personas personaGestion, double retirarDinero) {
+		if (validarAutorizado(personaGestion.getDni()) && validaImportePositivo(retirarDinero)
+
+				&& getSaldo() >= retirarDinero) {
+			setSaldo(getSaldo() - retirarDinero);
+		}
 	}
 
-	public static void setContador(int contador) {
-		CuentaBanco.contador = contador;
+	public void eliminarAutorizado(String dni) {
+		if (validarAutorizado(dni)) {
+			autorizado = null;
+		} else {
+			System.out.println("la persona no está autorizada.");
+		}
+
 	}
+
 }

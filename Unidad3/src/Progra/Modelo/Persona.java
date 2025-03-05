@@ -1,68 +1,113 @@
 package Modelo;
 
+import java.util.Objects;
+
 public class Persona {
-	private static final double PI = 3.1416;
-	private static int contador;
-	private int identificador;
 	private String nombre;
+	private String apellido;
+	private String email;
 	private int edad;
-
-	public Persona(String nombre, int edad) {
-		super();
-		this.identificador = contador + 1;
-		this.nombre = nombre;
-		this.edad = edad;
-		contador = contador + 1;
+	private float salario;
+	
+	protected String getApellido() {
+		return apellido;
 	}
-
-	@Override
-	public String toString() {
-		return "Personas [ identificador=" + identificador + ", nombre=" + nombre + ", edad=" + edad + "]";
+	protected void setApellido(String apellido) {
+		this.apellido = apellido;
 	}
-
-	public static int getContador() {
-		return contador;
-	}
-
-	public static void setContador(int contador) {
-		Persona.contador = contador;
-	}
-
-	public int getIdentificador() {
-		return identificador;
-	}
-
-	public void setIdentificador(int identificador) {
-		this.identificador = identificador;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public int getEdad() {
+	
+	protected int getEdad() {
 		return edad;
 	}
-
-	public void setEdad(int edad) {
+	protected void setEdad(int edad) {
 		this.edad = edad;
 	}
+	protected float getSalario() {
+		System.out.println("Get salario de persona");
+		return salario;
+	}
+	
 
-	public static boolean validaDniValido(String dni) {
-		boolean valido = false;
-
-		if (dni.matches("\\d{8}[A-Za-z]{1}")) {
-			valido = true;
-		}
-
-		else {
-			valido = false;
-		}
-		return valido;
+	
+	
+	protected void setSalario(float salario) {
+		this.salario = salario;
+	}
+	protected String getNombre() {
+		return nombre;
+	}
+	protected void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	
+	
+	
+	
+	
+	public Persona() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Persona(String nombre,String apellido, String email, int edad, float salario) {
+		super();
+		this.nombre = nombre;
+		this.apellido=apellido;
+		this.email = email;
+		this.edad = edad;
+		this.salario = salario;
+	}
+	protected String getEmail() {
+		return email;
+	}
+	protected void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public void concentrarse() {
+		System.out.println("Concentrarse persona");
 	}
 
+	public void concentrarse( String lugar) {
+		System.out.println("Concentrarse persona lugar: " + lugar);
+	}
+
+	public void concentrarse( int dias) {
+		System.out.println("Concentrarse persona dias: " + dias);
+	}
+
+	public void viajar() {
+		System.out.println("Viajar persona.");
+	}
+
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", edad=" + edad
+				+ ", salario=" + salario + "]";
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(apellido, edad, email, nombre, salario);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Persona other = (Persona) obj;
+		return Objects.equals(apellido, other.apellido) && edad == other.edad && Objects.equals(email, other.email)
+				&& Objects.equals(nombre, other.nombre)
+				&& Float.floatToIntBits(salario) == Float.floatToIntBits(other.salario);
+	}
+	
+	
+	
+	
+	
 }

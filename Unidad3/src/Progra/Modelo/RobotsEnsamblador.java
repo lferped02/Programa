@@ -1,0 +1,31 @@
+package Modelo;
+
+import Contador.Estado;
+
+public abstract class RobotsEnsamblador extends Robots {
+
+	public RobotsEnsamblador(String modelo, int bateriaNumerico, Estado estado) {
+		super(modelo, bateriaNumerico, estado);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public boolean recargar() {
+		boolean recargo = false;
+		if (estado == estado.APAGADO) {
+			System.out.println("Recargando por" + this.getCombustible());
+			recargo = true;
+		} else {
+			System.out.println("Estoy encendido y no puedo recargar");
+		}
+		return false;
+	}
+
+	protected abstract String getCombustible();
+
+	@Override
+	public String ejecutaTarea() {
+		// TODO Auto-generated method stub
+		return "Ensamblar piezas";
+	}
+}

@@ -1,27 +1,31 @@
 package Controlador;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
-import Modelo.CorreoElectronico;
-
 public class GestionaCorreos {
-	public static void main(String[] args) {
-		Scanner entrada = new Scanner (System.in);
-		
-		System.out.println("Introduce un correo: ");
-		String correo = entrada.nextLine();
-		boolean sigo = true;
-		while (sigo) {
-			int contador = 0;
-			CorreoElectronico[] correos = new CorreoElectronico[5];
-			if (CorreoElectronico.validaCorreo(correo)) {
+	private static char[] correo;
 
-				CorreoElectronico c = new CorreoElectronico(correo);
-				correos[contador] = c;
-				contador += 1;
-			}
-			sigo = contador != 5;
-		}
-		System.out.println(CorreoElectronico.validaCorreo(correo));
+	public static void main(String[] args) {
+		ArrayList<CorreoElectronico> correosValidos = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        
+        while(correosValidos.size()<5) {
+        	 System.out.print("Introduce un correo electrónico: ");
+             String correo = scanner.nextLine();
+             
+             if(CorreoElectronico.esCorreoValido(correo)) {
+            	 CorreoElectronico correoNuevo = new CorreoElectronico(correo);
+            	 correosValidos.add(correoNuevo);
+            	 System.out.println("Correo creado correctamente;" + correoNuevo);
+             } else {
+            	System.out.println("Correo invalido. Intentalo de nuevo.");
+            	
+             }
+        }
+        System.out.println("Lista de correos validos:");
+        for(CorreoElectronico correo: correosValidos);
+        	System.out.println(correo);
 	}
+
 }

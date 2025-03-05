@@ -6,7 +6,7 @@ public class Circulo {
 	private int id;
 	private static int contador;
 
-	public Circulo(double radio) {
+	public Circulo() {
 		super();
 		this.radio = radio;
 		this.id = contador + 1;
