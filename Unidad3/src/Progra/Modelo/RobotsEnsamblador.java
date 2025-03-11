@@ -2,7 +2,7 @@ package Modelo;
 
 import Contador.Estado;
 
-public abstract class RobotsEnsamblador extends Robots {
+public class RobotsEnsamblador extends Robots {
 
 	public RobotsEnsamblador(String modelo, int bateriaNumerico, Estado estado) {
 		super(modelo, bateriaNumerico, estado);
@@ -21,7 +21,9 @@ public abstract class RobotsEnsamblador extends Robots {
 		return false;
 	}
 
-	protected abstract String getCombustible();
+	protected String getCombustible() {
+		return null;
+	}
 
 	@Override
 	public String ejecutaTarea() {
