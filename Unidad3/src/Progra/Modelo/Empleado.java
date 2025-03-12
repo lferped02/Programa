@@ -1,6 +1,8 @@
 package Modelo;
 
-public class Empleado {
+import Interfaces.IAcciones;
+
+public class Empleado implements IAcciones {
 	String nombre;
 
 	@Override
@@ -24,6 +26,12 @@ public class Empleado {
 	int calcularSalarioAnual() {
 		int salarioAnual = salarioMensual * 12;
 		return salarioAnual;
+	}
+
+	@Override
+	public String ejecutaAcciones() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

@@ -2,6 +2,8 @@ package Modelo;
 
 import java.util.Objects;
 
+import Interfaces.IAcciones;
+
 public class Persona {
 	private String nombre;
 	private String apellido;
@@ -104,6 +106,10 @@ public class Persona {
 		return Objects.equals(apellido, other.apellido) && edad == other.edad && Objects.equals(email, other.email)
 				&& Objects.equals(nombre, other.nombre)
 				&& Float.floatToIntBits(salario) == Float.floatToIntBits(other.salario);
+	}
+	public IAcciones[] getAcciones() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

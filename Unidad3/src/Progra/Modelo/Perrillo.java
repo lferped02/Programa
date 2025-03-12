@@ -1,5 +1,7 @@
 package Modelo;
 
+import Interfaces.ICanino;
+
 public class Perrillo extends Animalito implements ICanino{
 
 	@Override

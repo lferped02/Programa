@@ -1,5 +1,8 @@
 package Modelo;
 
+import Interfaces.Coloreable;
+import Interfaces.Transportable;
+
 public class Mueble implements Coloreable, Transportable {
 
 	@Override
