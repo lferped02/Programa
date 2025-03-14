@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class Moneda {
 	static final float EUROS = 0.95f;

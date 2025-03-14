@@ -1,6 +1,4 @@
-package Controlador;
-
-import POO.Pokemon;
+package Progra.Controlador;
 
 public class GestionaPokemon {
 

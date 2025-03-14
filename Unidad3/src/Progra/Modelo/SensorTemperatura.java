@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -18,7 +18,9 @@ public class SensorTemperatura extends DispositivoWifi {
 
 	@Override
 	public boolean pendienteActualizacion(){
-		return pendienteActualizacion;
+		long diferencia = new Date().getTime() - fechaActualizacion.getTime();
+        long diferenciaMeses = diferencia / (1000L * 60 * 60 * 24 * 30);
+        return diferenciaMeses >= 3;
 	}
 
 	public String toString() {

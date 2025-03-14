@@ -1,6 +1,6 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.Pescado;
+import Progra.Modelo.Pescado;
 
 public class GestionaProductos {
 

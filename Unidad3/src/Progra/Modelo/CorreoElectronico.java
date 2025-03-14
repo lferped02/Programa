@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class CorreoElectronico {
 	private String nombre;
@@ -19,5 +19,10 @@ public class CorreoElectronico {
 		 
 		valida = correo.matches("[^@]+@[^@]+\\.[a-zA-Z]{2,}");
 		return valida;
+	}
+
+	public static boolean esCorreoValido(String correo) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

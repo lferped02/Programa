@@ -1,4 +1,4 @@
-package EjercicioSinHerencia;
+package Progra.EjercicioSinHerencia;
 
 public class Camion extends Vehiculo {
     int numRuedas;

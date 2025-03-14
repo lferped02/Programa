@@ -1,29 +1,32 @@
-package Modelo;
+package Progra.Modelo;
 
-import Contador.Familia;
+import java.time.LocalDate;
 
-public class Serpiente extends Animal2 {
+public class Serpiente extends Mascota {
+	private int numeroMudaPiel;
+	private int mesesGestacion;
 
-	public Serpiente(String nombre, Familia serpiente, String habita, Animal2[] animalComido, Animal2[] animalQueCome) {
-		super(nombre, serpiente, habita, animalComido, animalQueCome);
-		// TODO Auto-generated constructor stub
+	public Serpiente(String nombre, int edad, LocalDate fechaNacimiento, int numeroMudaPiel, int mesesGestacion) {
+		super(nombre, edad, fechaNacimiento);
+		this.numeroMudaPiel = numeroMudaPiel;
+		this.mesesGestacion = mesesGestacion;
 	}
 
 	@Override
-	public boolean huir(Animal2 a) {
+	public boolean habla() {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean atacar(Animal2 a) {
-		// TODO Auto-generated method stub
-		return false;
+	public String muestra() {
+		return "Serpiente [numeroMudaPiel=" + numeroMudaPiel + ", mesesGestacion=" + mesesGestacion + ", muestra()="
+				+ muestra() + "]";
 	}
 
-	public Serpiente() {
-		super();
-		// TODO Auto-generated constructor stub
-
+	@Override
+	public String informacionCompleta() {
+		return this.muestra();
 	}
+
 }

@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class CuentaBanco {
 	public CuentaBanco(double saldo, String numCuenta, Personas titular) {

@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -19,8 +19,9 @@ public class PuertaAutomatica extends DispositivoWifi {
 
 	@Override
 	public boolean pendienteActualizacion() {
-		return estadoSeguridad;
-
+		long diferencia = new Date().getTime() - fechaActualizacion.getTime();
+		long diferenciaMeses = diferencia / (1000L * 60 * 60 * 24 * 30);
+		return diferenciaMeses >= 1;
 	}
 
 	public String toString() {

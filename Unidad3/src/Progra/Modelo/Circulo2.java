@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class Circulo2 extends Figura {
 	private double radio;

@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class Triangulo extends Figura {
 	
@@ -8,7 +8,7 @@ public class Triangulo extends Figura {
 	
 
 	public Triangulo(String color, double altura, double base) {
-		super();
+		super(color);
 		this.color = color;
 		this.altura = altura;
 		this.base = base;

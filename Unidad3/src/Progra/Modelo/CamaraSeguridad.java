@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -19,8 +19,9 @@ public class CamaraSeguridad extends DispositivoWifi {
 
 	@Override
 	public boolean pendienteActualizacion() {
-		return pendienteActualizacion;
-		
+		long diferencia = new Date().getTime() - fechaActualizacion.getTime();
+        long diferenciaSemanas = diferencia / (1000L * 60 * 60 * 24 * 7);
+		return diferenciaSemanas >= 2;
 	}
 
 	public String toString() {

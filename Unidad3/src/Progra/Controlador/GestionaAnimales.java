@@ -1,6 +1,6 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.Animal;
+import Progra.Modelo.Animal;
 
 public class GestionaAnimales {
 

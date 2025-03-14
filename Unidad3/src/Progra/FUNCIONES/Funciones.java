@@ -1,4 +1,4 @@
-package FUNCIONES;
+package Progra.FUNCIONES;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Controlador;
+package Progra.Controlador;
 
 public class GestionaEmpleado {
 

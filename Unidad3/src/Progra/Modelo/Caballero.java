@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class Caballero extends Personaje {
 	public Caballero(String nombre, int nivel, float hP, String arma) {

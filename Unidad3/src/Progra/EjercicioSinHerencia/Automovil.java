@@ -1,4 +1,4 @@
-package EjercicioSinHerencia;
+package Progra.EjercicioSinHerencia;
 
 public class Automovil extends Vehiculo {
     String califiacionEcologica;

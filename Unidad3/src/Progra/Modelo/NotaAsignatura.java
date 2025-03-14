@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class NotaAsignatura {
 	public NotaAsignatura(String notaMedia, int notaPrimerTrimestre, int notaSegundoTrimestre,

@@ -1,4 +1,4 @@
-package Controlador;
+package Progra.Controlador;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Tarea_evaluable;
+package Progra.Tarea_evaluable;
 
 public class Administrativo extends Empleado {
 	private int productivaExtra;

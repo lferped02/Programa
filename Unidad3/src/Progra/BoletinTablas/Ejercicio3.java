@@ -1,4 +1,4 @@
-package BoletinTablas;
+package Progra.BoletinTablas;
 
 import java.util.Scanner;
 

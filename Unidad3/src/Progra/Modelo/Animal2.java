@@ -1,8 +1,6 @@
-package Modelo;
+package Progra.Modelo;
 
-import Contador.Familia;
 import Interfaces.Depredador;
-import Interfaces.Presa;
 
 public abstract class Animal2 implements Depredador, Presa {
 	private String nombre;

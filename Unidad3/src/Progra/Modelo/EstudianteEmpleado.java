@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 //Un problema surge aquí: ¿qué pasa si un Estudiante también es Empleado?
 public class EstudianteEmpleado extends Estudiante {
@@ -8,6 +8,6 @@ public class EstudianteEmpleado extends Estudiante {
 	}
 
 	public void trabajar() {
-		System.out.println(nombre + " está estudiando y trabajando.");
+		System.out.println("nombre" + " está estudiando y trabajando.");
 	}
 }

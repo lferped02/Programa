@@ -1,10 +1,10 @@
-package Modelo;
+package Progra.Modelo;
 
 import java.time.LocalDate;
 
-import Contador.IAlimento;
-import Contador.IDescuento;
-import Contador.ILiquidos;
+import Fernández_LiLi_prueba.IAlimento;
+import Fernández_LiLi_prueba.IDescuento;
+import Fernández_LiLi_prueba.ILiquidos;
 
 public class Vino extends Producto implements IAlimento,ILiquidos,IDescuento {
 

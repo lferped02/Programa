@@ -1,6 +1,6 @@
-package Modelo;
+package Progra.Modelo;
 
-import Interfaces.IAcciones;
+import Fernández_LiLi_prueba.IAcciones;
 
 public class Empleado implements IAcciones {
 	String nombre;

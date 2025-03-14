@@ -1,4 +1,4 @@
-package Simulacros;
+package Progra.Simulacros;
 
 import java.util.Random;
 import java.util.Scanner;

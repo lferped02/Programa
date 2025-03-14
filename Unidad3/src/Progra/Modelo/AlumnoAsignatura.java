@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class AlumnoAsignatura {
 	public AlumnoAsignatura(String nombre, String apellidos, String email) {

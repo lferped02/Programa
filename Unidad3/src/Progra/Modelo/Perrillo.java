@@ -1,6 +1,6 @@
-package Modelo;
+package Progra.Modelo;
 
-import Interfaces.ICanino;
+import Fernández_LiLi_prueba.ICanino;
 
 public class Perrillo extends Animalito implements ICanino{
 

@@ -1,12 +1,16 @@
-package Modelo;
+package Progra.Modelo;
 
-import Contador.Estado;
+import Progra.Contador.Estado;
 
 public class RobotsPintor extends Robots {
 
-	public RobotsPintor(String modelo, int bateriaNumerico, Estado estado) {
+	public RobotsPintor(String modelo, int bateriaNumerico, Empleado estado) {
 		super(modelo, bateriaNumerico, estado);
 
+	}
+
+	public RobotsPintor(String modelo, int bateriaNumerico, Simulacion.copy.Estado apagado) {
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override

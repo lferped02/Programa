@@ -1,4 +1,4 @@
-package Iteradores;
+package Progra.Iteradores;
 
 import java.util.Scanner;
 

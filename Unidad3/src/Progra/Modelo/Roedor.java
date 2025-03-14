@@ -1,6 +1,4 @@
-package Modelo;
-
-import Contador.Familia;
+package Progra.Modelo;
 
 public class Roedor extends Animal2 {
 

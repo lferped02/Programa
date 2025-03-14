@@ -1,4 +1,4 @@
-package EjemploEnum;
+package Progra.EjemploEnum;
 
 public class Reserva {
 	private enum Mes {

@@ -1,31 +1,34 @@
-package Controlador;
+package Progra.Controlador;
 
-import Contador.Estado;
-import Modelo.CamaraSeguridad;
-import Modelo.PuertaAutomatica;
-import Modelo.RobotsEnsamblador;
-import Modelo.RobotsPintor;
-import Modelo.RobotsSoldador;
-import Modelo.SensorTemperatura;
+import Progra.Modelo.CamaraSeguridad;
+import Progra.Modelo.PuertaAutomatica;
+import Progra.Modelo.SensorTemperatura;
 
 public class GestionaFactoria {
-
 
 	public static void main(String[] args) {
 		// Robots
 		GestionaFactoria gestion = new GestionaFactoria();
-		RobotsSoldador soldador = new RobotsSoldador("Sergio", 20, Estado.ALERTA);
-		RobotsPintor pintor = new RobotsPintor("Javier", 0, Estado.APAGADO);
-		RobotsEnsamblador ensamblador = new RobotsEnsamblador("Laura",60,Estado.APAGADO);
+		RobotSoldador soldador = new RobotSoldador("Modelo X1", 15, "ENCENDIDO", "electricidad", "Soldador industrial",
+				300, "Nivel 3");
+		RobotPintor pintor = new RobotPintor("Modelo P2", 20, "APAGADO", "electricidad", "Pintor automático");
+		RobotEnsamblador ensamblador = new RobotEnsamblador("Modelo E3", 12, "APAGADO", "gasolina",
+				"Ensamblador de piezas");
 
-
+		gestion.guardarRobot(soldador);
+		gestion.guardarRobot(pintor);
+		gestion.guardarRobot(ensamblador);
 
 		// Dispositivo
-		SensorTemperatura sensor = new SensorTemperatura("00:1A;2B:3C;4D,5E",EstadoDispositivo.ON_CONECTADO);
-		CamaraSeguridad camara = new CamaraSeguridad(null, null, null);
-		PuertaAutomatica puerta = new PuertaAutomatica(null, null, null);
-		
-		
+		SensorTemperatura sensor = new SensorTemperatura("00:14:22:01:23:45", "ON_SINWIFI", new Date(), 22.5);
+		CamaraSeguridad camara = new CamaraSeguridad("00:14:22:01:23:46", "OFF", new Date(), "1920x1080");
+		PuertaAutomatica puerta = new PuertaAutomatica("00:14:22:01:23:47", "ON_SINWIFI", new Date(), true);
+
+		gestion.guardarDispositivoWifi(sensor);
+		gestion.guardarDispositivoWifi(camara);
+		gestion.guardarDispositivoWifi(puerta);
+
+		gestion.mostrarInventario();
 
 	}
 

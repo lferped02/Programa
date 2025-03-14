@@ -1,4 +1,4 @@
-package BoletinTablas;
+package Progra.BoletinTablas;
 
 public class Ejercicio1 {
 

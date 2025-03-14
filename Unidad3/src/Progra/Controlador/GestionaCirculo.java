@@ -1,14 +1,14 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.Circulo;
+import Progra.Modelo.Circulo;
 
 public class GestionaCirculo {
 
 	public static void main(String[] args) {
-		Circulo c3 = new Circulo(3);
+		Circulo c3 = new Circulo();
 		System.out.println(c3);
 		
-		Circulo c30 = new Circulo(30);
+		Circulo c30 = new Circulo();
 		System.out.println(c30);
 	}
 

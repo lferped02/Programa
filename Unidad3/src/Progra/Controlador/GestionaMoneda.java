@@ -1,6 +1,6 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.Moneda;
+import Progra.Modelo.Moneda;
 
 public class GestionaMoneda {
 

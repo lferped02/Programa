@@ -1,4 +1,4 @@
-package Boletin2;
+package Progra.Boletin2;
 	import java.util.Scanner;
 
 	public class Calculadora {

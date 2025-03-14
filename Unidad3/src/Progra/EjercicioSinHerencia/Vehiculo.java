@@ -1,5 +1,5 @@
 // Clase base común
-package EjercicioSinHerencia;
+package Progra.EjercicioSinHerencia;
 
 public class Vehiculo {
     String dueno;

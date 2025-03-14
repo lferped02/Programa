@@ -1,6 +1,6 @@
-package Modelo;
+package Progra.Modelo;
 
- class Cubo {
+ public class Cubo {
 	int lado;
 	float volumenMax;
 	int litrosActuales;
@@ -27,12 +27,12 @@ package Modelo;
 		return volumenMax;
 	}
 
-	void imprimeAreaYVolumen() {
+	public void imprimeAreaYVolumen() {
 		System.out.println("El área del cubo es de " + calcularArea() + " dm² y el volumen es de " + calcularVolumen()
 				+ " litros.");
 	}
 
-	boolean llenarCubo(int nLitros) {
+	public boolean llenarCubo(int nLitros) {
 		boolean llenarCubo = false;
 		if (nLitros > 0 && litrosActuales + nLitros <= volumenMax) {
 			litrosActuales = litrosActuales + nLitros;
@@ -46,7 +46,7 @@ package Modelo;
 		return llenarCubo;
 	}
 
-	boolean vaciarCubo(int nLitros) {
+	public boolean vaciarCubo(int nLitros) {
 		boolean vaciarCubo = false;
 		if (nLitros > 0 && litrosActuales >= nLitros) {
 			vaciarCubo = true;

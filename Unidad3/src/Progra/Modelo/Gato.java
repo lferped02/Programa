@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class Gato extends AnimalAbstracto {
 	public String getSonidoQueEmite() {

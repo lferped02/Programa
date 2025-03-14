@@ -1,6 +1,6 @@
-package RETOS;
+package Progra.RETOS;
 
-import FUNCIONES.Funciones;
+import Progra.FUNCIONES.Funciones;
 
 public class HackGrinch {
 

@@ -1,7 +1,7 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.Entrenador;
-import Modelo.Persona;
+import Progra.Modelo.Entrenador;
+import Progra.Modelo.Persona;
 
 public class GestionaPersona {
 

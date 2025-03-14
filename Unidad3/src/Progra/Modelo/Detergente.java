@@ -1,9 +1,10 @@
-package Modelo;
+package Progra.Modelo;
 
-import Contador.IDescuento;
-import Contador.ILiquidos;
-import Contador.TipoDeDetergente;
-import Contador.TipoDeRopa;
+import Contador.*;
+import Fernández_LiLi_prueba.IDescuento;
+import Fernández_LiLi_prueba.ILiquidos;
+import Progra.EjemploEnum.TipoDeDetergente;
+import Progra.EjemploEnum.TipoDeRopa;
 
 public class Detergente extends Producto implements ILiquidos,IDescuento {
 

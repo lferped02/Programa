@@ -1,4 +1,4 @@
-package Tarea_evaluable;
+package Progra.Tarea_evaluable;
 
 public class Directivo extends Empleado {
 	private int calculaBonificacion;

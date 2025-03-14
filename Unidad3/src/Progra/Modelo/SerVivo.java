@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public abstract class SerVivo {
 	private int edad; 

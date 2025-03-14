@@ -1,8 +1,7 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.Automovil;
-import Modelo.Camion;
-import Modelo.Vehiculo;
+import Progra.Modelo.*;
+
 
 public class GestionaVechiculos {
 

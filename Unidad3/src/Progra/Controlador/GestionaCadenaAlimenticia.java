@@ -1,9 +1,11 @@
-package Controlador;
+package Progra.Controlador;
 
 import java.util.Arrays;
 
 import Contador.Familia;
+import Mascota.Serpiente;
 import Modelo.*;
+import Progra.Modelo.Animal2;
 
 public class GestionaCadenaAlimenticia {
 

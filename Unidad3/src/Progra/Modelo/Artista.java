@@ -1,9 +1,8 @@
-package Modelo;
+package Progra.Modelo;
 
-import Interfaces.IAcciones;
 
 //Agregamos otra clase con otro comportamiento
-public class Artista implements IAcciones {
+public class Artista implements Fernández_LiLi_prueba.IAcciones {
 	@Override
 	public String ejecutaAcciones() {
 		return "El pintor pinta";

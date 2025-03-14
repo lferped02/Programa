@@ -1,4 +1,4 @@
-package Controlador;
+package Progra.Controlador;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -16,7 +16,13 @@ public class TesteadorQA {
 		System.out.println("Detras del input");
 		}
 		catch (InputMismatchException e) {
-			System.out.println("Entro en el catch, porque no has introducido un entero");
+			System.out.println("Entro en el catch 1:" + e.getCause());
+			System.out.println("Entro en el catch 1:" + e.getMessage());
+			System.out.println("Ingresa un numero entero:");
+		}
+		catch (StringIndexOutOfBoundsException a) {
+			System.out.println("Entro en el catch 2:" + a.getCause());
+			System.out.println("Entro en el catch 2:" + a.getMessage());
 		}
 		finally {
 		System.out.println("Pase lo que pase, salgo");

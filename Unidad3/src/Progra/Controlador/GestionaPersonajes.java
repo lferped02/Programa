@@ -1,6 +1,6 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.Mago;
+import Progra.Modelo.Mago;
 
 public class GestionaPersonajes {
 

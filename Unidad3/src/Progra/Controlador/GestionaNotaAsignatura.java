@@ -1,7 +1,7 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.AlumnoAsignatura;
-import Modelo.NotaAsignatura;
+import Progra.Modelo.AlumnoAsignatura;
+import Progra.Modelo.NotaAsignatura;
 
 public class GestionaNotaAsignatura {
 

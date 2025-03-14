@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public abstract class AnimalAbstracto {
 	String nombre;

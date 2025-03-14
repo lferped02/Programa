@@ -1,4 +1,4 @@
-package Arrays;
+package Progra.Arrays;
 
 public class Listas {
 

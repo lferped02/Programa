@@ -3,8 +3,8 @@ package Modelo;
 import java.time.LocalDate;
 import java.util.Date;
 
-import Contador.IAlimento;
-import Contador.TipoDePescado;
+import Fernández_LiLi_prueba.IAlimento;
+import Progra.EjemploEnum.TipoDePescado;
 
 
 public class Pescado extends Producto implements IAlimento {

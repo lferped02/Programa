@@ -1,4 +1,4 @@
-package BoletinTablas;
+package Progra.BoletinTablas;
 
 //Clase principal
 public class BuscarElemento {

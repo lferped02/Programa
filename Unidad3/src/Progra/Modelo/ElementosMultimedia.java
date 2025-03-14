@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public abstract class ElementosMultimedia extends Recurso {
 	private String nombre;
@@ -50,4 +50,6 @@ public abstract class ElementosMultimedia extends Recurso {
 	}
 
 	public abstract int duracion();
+
+	public abstract boolean estaDisponible();
 }

@@ -1,4 +1,4 @@
-package EjemploEnum;
+package Progra.EjemploEnum;
 
 public enum DiaDeLaSemana {
 

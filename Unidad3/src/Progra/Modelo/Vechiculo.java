@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class Vechiculo {
 	String marca;
@@ -30,13 +30,13 @@ public class Vechiculo {
 				+ tipoCombustible + "]";
 	}
 
-	float calcularConsumo(float kms) {
+	public float calcularConsumo(float kms) {
 		float consumo = (kms * consumoMedioLitroPor100kms)/100;
 		System.out.println("Te gastarías " + consumo + " litros.");
 		return consumo;
 	}
 
-	boolean hayQueRepostar() {
+	public boolean hayQueRepostar() {
 		boolean repostar;
 
 		if (cantidadCombustibleActual < (0.2 * capacidadMax)) {

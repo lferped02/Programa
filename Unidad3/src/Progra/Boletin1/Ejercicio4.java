@@ -1,5 +1,4 @@
-package Boletin1;
-
+package Progra.Boletin1;
 
 public class Ejercicio4 {
 
@@ -12,10 +11,10 @@ public class Ejercicio4 {
 		String contraseña_correcta = "secreta123";
 
 		while (usuario_correcto.equals(usuario) == false && contraseña_correcta.equals(contraseña) == false) {
-			
-			//usuario = JOptionPanel.showInputDialog("Introduce un usuario: ");
-			//contraseña = JOptionPanel.showInputDialog("Introduce una contraseña: ");
- 
+
+			// usuario = JOptionPanel.showInputDialog("Introduce un usuario: ");
+			// contraseña = JOptionPanel.showInputDialog("Introduce una contraseña: ");
+
 			if (usuario_correcto.equals(usuario) == false && contraseña_correcta.equals(contraseña) == false) {
 				System.out.println("La información introducida es incorrecta, inténtalo de nuevo");
 

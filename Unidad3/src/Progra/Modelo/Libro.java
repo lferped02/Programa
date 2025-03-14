@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class Libro extends Recurso {
 	private String autor;

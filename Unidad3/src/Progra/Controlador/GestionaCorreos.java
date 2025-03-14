@@ -1,7 +1,9 @@
-package Controlador;
+package Progra.Controlador;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import Progra.Modelo.CorreoElectronico;
 
 public class GestionaCorreos {
 	private static char[] correo;

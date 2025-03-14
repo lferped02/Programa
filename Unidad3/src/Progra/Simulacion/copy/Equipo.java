@@ -1,4 +1,4 @@
-package Simulacion.copy;
+package Progra.Simulacion.copy;
 
 import java.util.Objects;
 

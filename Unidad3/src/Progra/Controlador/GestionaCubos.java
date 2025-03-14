@@ -1,6 +1,6 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.Cubo;
+import Progra.Modelo.*;
 
 public class GestionaCubos {
 

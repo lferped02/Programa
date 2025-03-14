@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class Mago extends Personaje {
 
@@ -34,13 +34,10 @@ public class Mago extends Personaje {
 	}
 
 	public boolean esAtacado(Personaje atacante, int distancia) {
-		if(distancia <5) {
-			
+		if (distancia < 5) {
+
 		}
-		
-		
-		
-		
+
 		return true;
 	}
 

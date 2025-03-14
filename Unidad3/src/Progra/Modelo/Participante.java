@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 public class Participante {
 	public Participante(String nick, String nombre, int edad, double puntuacion) {

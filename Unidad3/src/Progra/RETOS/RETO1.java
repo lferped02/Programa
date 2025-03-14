@@ -1,4 +1,4 @@
-package RETOS;
+package Progra.RETOS;
 
 import java.util.Scanner;
 

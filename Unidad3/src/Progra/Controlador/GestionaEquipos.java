@@ -1,15 +1,16 @@
-package Controlador;
+package Progra.Controlador;
 
-import POO.Equipo;
-import POO.Persona;
+
+import Progra.Modelo.*;
+import Simulacion.copy.Equipo;
 
 public class GestionaEquipos {
 
 	public static void main(String[] args) {
-		Persona p1 = new Persona("Andrea", "Perea", "12345678c", 18);
-		Persona p2 = new Persona("Luis", "Perea", "12345679d", 22);
-		Persona p3 = new Persona("David", "Perez", "22345678c", 33);
-		Persona p4 = new Persona("Sebastián", "Rodríguez", "28345678c", 25);
+		Persona p1 = new Persona("Andrea", "Perea", "12345678c", 18, 0);
+		Persona p2 = new Persona("Luis", "Perea", "12345679d", 22, 0);
+		Persona p3 = new Persona("David", "Perez", "22345678c", 33, 0);
+		Persona p4 = new Persona("Sebastián", "Rodríguez", "28345678c", 25, 0);
 
 		Persona[] personas1 = { p1, p2 };
 		Persona[] personas2 = { p3, p4 };

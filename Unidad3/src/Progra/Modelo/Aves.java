@@ -1,38 +1,31 @@
-package Modelo;
+package Progra.Modelo;
 
 import java.time.LocalDate;
 
-public class Aves {
+abstract abstract class Aves extends Mascota {
 	protected String pico;
 	protected boolean vuela;
 
-	public Aves(String pico, boolean vuela) {
-		super();
+	public Aves(String nombre, int edad, LocalDate fechaNacimiento, String pico, boolean vuela) {
+		super(nombre, edad, fechaNacimiento);
 		this.pico = pico;
 		this.vuela = vuela;
 	}
 
-	public String getPico() {
-		return pico;
+	public abstract String volar();
+
+	@Override
+	public String toString() {
+		return "Aves [pico=" + pico + ", vuela=" + vuela + ", muestra()=" + muestra() + "]";
 	}
 
-	public void setPico(String pico) {
-		this.pico = pico;
-	}
-
-	public boolean isVuela() {
-		return vuela;
-	}
-
+	@Override
 	public void setVuela(boolean vuela) {
-		this.vuela = vuela;
-	}
-	
-	static boolean volar() {
-		boolean volar = true;
-		if ()
-		return volar;
-		
+		return;
 	}
 
+	public String saluda() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

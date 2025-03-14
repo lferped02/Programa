@@ -1,4 +1,6 @@
-package Controlador;
+package Progra.Controlador;
+
+import Progra.Modelo.*;
 
 public class GestionaVehiculos {
 
