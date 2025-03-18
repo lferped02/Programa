@@ -112,4 +112,9 @@ public class Persona {
 		return null;
 	}
 
+	public static boolean validaDniValido(String dni) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

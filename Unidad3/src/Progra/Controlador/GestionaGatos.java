@@ -1,8 +1,8 @@
 package Progra.Controlador;
 
 import java.util.Scanner;
+import Progra.Modelo.Gato;
 
-import POO.Gato;
 
 public class GestionaGatos {
 

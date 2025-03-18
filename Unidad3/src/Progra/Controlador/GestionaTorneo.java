@@ -1,7 +1,7 @@
-package Controlador;
+package Progra.Controlador;
 
-import Modelo.Participante;
-import Modelo.Partida;
+import Progra.Modelo.Participante;
+import Progra.Modelo.Partida;
 
 public class GestionaTorneo {
 
@@ -14,7 +14,7 @@ public class GestionaTorneo {
 
 		Participante participantes[] = { p1, p2, p3, p4 };
 
-		Partida n1 = new Partida("Catán", participantes);
+		Partida n1 = new Partida("Catán", participantes, p4);
 
 		n1.ImprimeGanador();
 

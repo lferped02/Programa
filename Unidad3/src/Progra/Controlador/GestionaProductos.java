@@ -1,5 +1,6 @@
 package Progra.Controlador;
 
+import Progra.EjemploEnum.TipoDePescado;
 import Progra.Modelo.Pescado;
 
 public class GestionaProductos {

@@ -1,4 +1,4 @@
-package Progra.Controlador;
+package Excepciones;
 
 public class Ejercicio2Exception {
 

@@ -6,7 +6,7 @@ public class Gatito extends Mascota {
 	private String color;
 	private boolean peloLargo;
 
-	protected Gatito(String nombre, int edad, LocalDate fechaNacimiento) {
+	public Gatito(String nombre, int edad, LocalDate fechaNacimiento) {
 		super(nombre, edad, fechaNacimiento);
 		// TODO Auto-generated constructor stub
 	}

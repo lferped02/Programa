@@ -27,4 +27,14 @@ public class Partida {
 		return null;
 	}
 
+	public void ImprimeGanador() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void obtenerMayorPerdedor() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

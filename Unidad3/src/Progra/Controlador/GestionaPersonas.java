@@ -2,7 +2,8 @@ package Progra.Controlador;
 
 import java.util.Scanner;
 
-import Modelo.Persona;
+
+import Progra.Modelo.Persona;
 
 public class GestionaPersonas {
 
@@ -22,7 +23,7 @@ public class GestionaPersonas {
 
 		while (!dni.equals("fin")) {
 			if (Persona.validaDniValido(dni)) {
-				Persona p1 = new Persona(dni, 0);
+				Persona p1 = new Persona();
 
 				System.out.println("DNI válido");
 

@@ -1,19 +1,18 @@
-package Controlador;
+package Progra.Controlador;
 
 import java.time.LocalDate;
+import Progra.Modelo.*;
 
-import Modelo.Cliente;
-import Modelo.CuentaBanco;
 
 public class GestionaCuentaBanco {
 
 	public static void main(String[] args) {
 
-		Cliente pepe = new Cliente("Pepe", "López", "12345678A", 26);
+		Cliente pepe = new Progra.Modelo.Cliente("Pepe", "López", "12345678A", 26);
 		Cliente luis = new Cliente("Juan", "García", "41005979T", 54);
 		Cliente juan = new Cliente("Pedro", "Sánchez", "39091189G", 32);
 
-		CuentaBanco c1 = new CuentaBanco(1200, LocalDate.of(2025, 02, 25), "ES4589 4587 5454 5456", juan, null);
+		CuentaBanco c1 = new CuentaBanco(1200, "ES4589 4587 5454 5456", null);
 		System.out.println(c1);
 
 		CuentaBanco c2 = new CuentaBanco(8000, LocalDate.of(2025, 02, 25), "ES91 2100 0418 4502 0005 1332", pepe, juan);

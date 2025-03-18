@@ -2,6 +2,7 @@ package Progra.Controlador;
 
 public class GestionaPokemon {
 
+
 	public static void main(String[] args) {
 		Pokemon pikachu = new Pokemon();
 		pikachu.nombre="Pikachu";

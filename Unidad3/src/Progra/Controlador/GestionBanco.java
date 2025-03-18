@@ -1,9 +1,8 @@
 package Progra.Controlador;
 
 import java.time.LocalDate;
-
-import Modelo.CuentaBanco;
-import Modelo.Personas;
+import Progra.Modelo.CuentaBanco;
+import Progra.Modelo.Personas;
 
 public class GestionBanco {
 

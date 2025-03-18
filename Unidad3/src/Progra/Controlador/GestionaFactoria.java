@@ -1,5 +1,6 @@
 package Progra.Controlador;
 
+import Progra.Modelo.RobotsEnsamblador;
 import Progra.Modelo.CamaraSeguridad;
 import Progra.Modelo.PuertaAutomatica;
 import Progra.Modelo.SensorTemperatura;
@@ -9,7 +10,7 @@ public class GestionaFactoria {
 	public static void main(String[] args) {
 		// Robots
 		GestionaFactoria gestion = new GestionaFactoria();
-		RobotSoldador soldador = new RobotSoldador("Modelo X1", 15, "ENCENDIDO", "electricidad", "Soldador industrial",
+		RobotsEnsamblador soldador = new RobotsEnsamblador("Modelo X1", 15, "ENCENDIDO", "electricidad", "Soldador industrial",
 				300, "Nivel 3");
 		RobotPintor pintor = new RobotPintor("Modelo P2", 20, "APAGADO", "electricidad", "Pintor automático");
 		RobotEnsamblador ensamblador = new RobotEnsamblador("Modelo E3", 12, "APAGADO", "gasolina",

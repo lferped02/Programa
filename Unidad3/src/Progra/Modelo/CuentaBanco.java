@@ -1,5 +1,7 @@
 package Progra.Modelo;
 
+import java.time.LocalDate;
+
 public class CuentaBanco {
 	public CuentaBanco(double saldo, String numCuenta, Personas titular) {
 		super();
@@ -7,6 +9,10 @@ public class CuentaBanco {
 		this.numCuenta = numCuenta;
 		this.titular = titular;
 		this.autorizado = autorizado;
+	}
+
+	public CuentaBanco(int i, LocalDate of, String string, Cliente pepe, Cliente juan) {
+		// TODO Auto-generated constructor stub
 	}
 
 	public double getSaldo() {
@@ -79,6 +85,11 @@ public class CuentaBanco {
 			System.out.println("la persona no está autorizada.");
 		}
 
+	}
+
+	public static char[] getContador() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
