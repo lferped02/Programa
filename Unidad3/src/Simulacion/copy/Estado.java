@@ -1,6 +1,6 @@
-package Simulacion.copy;
+package Progra.Simulacion.copy;
 
 public enum Estado {
-	REGISTRADA, ANALIZADA, RESOLUCION, CERRADA, APAGADO, ALERTA;
+	REGISTRADA, ANALIZADA, RESOLUCION, CERRADA;
 
 }
