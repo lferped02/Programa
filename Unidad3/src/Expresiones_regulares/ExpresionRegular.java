@@ -1,4 +1,4 @@
-package Progra.Expresiones_regulares;
+package Expresiones_regulares;
 
 public class ExpresionRegular {
 

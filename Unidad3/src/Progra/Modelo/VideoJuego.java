@@ -1,5 +1,7 @@
 package Progra.Modelo;
 
+import java.util.Iterator;
+
 public class VideoJuego extends ElementosMultimedia{
 
 	private int minutos;
@@ -25,13 +27,22 @@ public class VideoJuego extends ElementosMultimedia{
 		this.minutos = minutos;
 
 	}
-	public VideoJuego(int i, String string, int j) {
-		// TODO Auto-generated constructor stub
-	}
 
 	@Override
 	public int getDevuelveDiasPrestamo() {
 		// TODO Auto-generated method stub
 		return this.getDiasPrestamo();
+	}
+
+	@Override
+	public Iterator iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean estaDisponible() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

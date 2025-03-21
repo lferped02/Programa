@@ -1,1 +1,1 @@
-package Progra.EjemploEnum;
+package EjemploEnum;

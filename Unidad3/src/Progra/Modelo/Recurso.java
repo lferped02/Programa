@@ -2,9 +2,7 @@ package Progra.Modelo;
 
 import java.util.Objects;
 
-import Interfaces.IPrestable;
-
-public abstract class Recurso implements IPrestable {
+public abstract class Recurso implements Iterable {
 	private static int contador;
 	private int id;
 	private String ubicacion;
@@ -40,13 +38,11 @@ public abstract class Recurso implements IPrestable {
 		this.ubicacion = ubicacion;
 	}
 
-	@Override
 	public int getDevuelveDiasPrestamo() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	@Override
 	public boolean estaDisponible() {
 		// TODO Auto-generated method stub
 		return false;
@@ -67,6 +63,11 @@ public abstract class Recurso implements IPrestable {
 			return false;
 		Recurso other = (Recurso) obj;
 		return id == other.id && Objects.equals(ubicacion, other.ubicacion);
+	}
+
+	public int duracion() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

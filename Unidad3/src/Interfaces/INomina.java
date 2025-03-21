@@ -1,4 +1,4 @@
-package Empleado;
+package Interfaces;
 
 public interface INomina {
 

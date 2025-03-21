@@ -1,4 +1,4 @@
-package Progra.ExprRegulares;
+package ExprRegulares;
 
 import java.util.regex.Pattern;
 

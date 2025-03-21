@@ -1,4 +1,4 @@
-package Modelo;
+package Progra.Modelo;
 
 import java.time.LocalDate;
 import java.util.Date;

@@ -40,5 +40,12 @@ public class Alquiler {
 	public void setFechaAlquiler(LocalDate fechaAlquiler) {
 		this.fechaAlquiler = fechaAlquiler;
 	}
+	public float getImporteTotalGenerado() {
+		return 0;
+	}
+	public Object getEstado() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

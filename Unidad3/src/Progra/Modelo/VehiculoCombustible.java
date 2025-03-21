@@ -1,13 +1,14 @@
 package Progra.Modelo;
 
 public class VehiculoCombustible extends VehiculoGeneral {
+	private static String[] alquiler;
 	private String matricula;
 	private boolean esDiesel;
 	private String marca;
 	private String modelo;
 
 	public VehiculoCombustible(String matricula, boolean esDiesel, String marca, String modelo) {
-		super();
+		super(modelo, alquiler);
 		this.matricula = matricula;
 		this.esDiesel = esDiesel;
 		this.marca = marca;

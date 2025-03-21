@@ -1,4 +1,4 @@
-package Progra.CADENAS;
+package CADENAS;
 
 import java.util.Scanner;
 import java.util.Arrays;

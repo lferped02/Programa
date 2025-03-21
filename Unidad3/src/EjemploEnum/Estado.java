@@ -1,6 +1,6 @@
-package Progra.EjemploEnum;
+package EjemploEnum;
 
 public enum Estado {
-	REGISTRADO, VIGENTE, ENTREGADO, CERRADO
+	REGISTRADO, VIGENTE, ENTREGADO, CERRADO, APAGADO
 
 }

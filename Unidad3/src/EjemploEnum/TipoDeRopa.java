@@ -1,4 +1,4 @@
-package Progra.EjemploEnum;
+package EjemploEnum;
 
 public enum TipoDeRopa {
 

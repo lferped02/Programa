@@ -1,5 +1,7 @@
 package Progra.Modelo;
 
+import java.util.Iterator;
+
 public class Libro extends Recurso {
 	private String autor;
 	private String editorial;
@@ -62,5 +64,11 @@ public class Libro extends Recurso {
 		// TODO Auto-generated method stub
 		return false;
 
+	}
+
+	@Override
+	public Iterator iterator() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

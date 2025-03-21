@@ -1,4 +1,4 @@
-package Progra.BoletinTablas;
+package BoletinTablas;
 
 public class Ejemplo {
 

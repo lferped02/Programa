@@ -6,7 +6,7 @@ import java.util.Date;
 public abstract class DispositivoWifi {
 	private String mac;
 	private String estado;
-	private LocalDate fechaActualizacion;
+	protected LocalDate fechaActualizacion;
 
 	public DispositivoWifi(String mac, String estado, LocalDate fechaActualizacion) {
 		super();

@@ -1,8 +1,7 @@
 package Progra.Modelo;
 
 import java.util.Objects;
-
-import Interfaces.IAcciones;
+import FUNCIONES.Funciones;
 
 public class Persona {
 	private String nombre;
@@ -107,7 +106,7 @@ public class Persona {
 				&& Float.floatToIntBits(salario) == Float.floatToIntBits(other.salario);
 	}
 
-	public IAcciones[] getAcciones() {
+	public Funciones[] getAcciones() {
 		// TODO Auto-generated method stub
 		return null;
 	}

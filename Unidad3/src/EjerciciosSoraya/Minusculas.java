@@ -1,4 +1,4 @@
-package Progra.EjerciciosSoraya;
+package EjerciciosSoraya;
 
 public class Minusculas {
 

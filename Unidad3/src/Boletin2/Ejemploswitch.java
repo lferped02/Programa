@@ -1,4 +1,4 @@
-package Progra.Boletin2;
+package Boletin2;
 
 public class Ejemploswitch {
 

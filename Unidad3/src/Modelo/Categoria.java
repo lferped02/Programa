@@ -1,6 +1,0 @@
-package Empleado;
-
-public enum Categoria {
-	JEFE_PROYECTO, SCRUM_MASTER, DESARROLLADOR_SENIOR, DESARROLLA_JUNIOR, ARQUITECTO
-
-}

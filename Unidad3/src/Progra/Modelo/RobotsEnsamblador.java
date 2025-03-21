@@ -1,6 +1,6 @@
-package Modelo;
+package Progra.Modelo;
 
-import Contador.Estado;
+import EjemploEnum.Estado;
 
 public class RobotsEnsamblador extends Robots {
 

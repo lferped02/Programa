@@ -1,4 +1,4 @@
-package Progra.ExamenJAVA;
+package ExamenJAVA;
 
 import java.util.Scanner;
 

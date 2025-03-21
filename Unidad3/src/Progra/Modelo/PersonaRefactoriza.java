@@ -2,16 +2,18 @@ package Progra.Modelo;
 
 import java.util.Arrays;
 
-import Interfaces.IAcciones;
+import FUNCIONES.Funciones;
+import Fernández_LiLi_prueba.IAcciones;
+
 
 public class PersonaRefactoriza {
-	IAcciones[]acciones;
+	Funciones[]acciones;
 	String nombre;
 
 	public PersonaRefactoriza(String nombre) {
 		super();
 		this.nombre = nombre;
-		this.acciones = new IAcciones[10];
+		this.acciones = new Funciones[10];
 		}
 
 	public String getNombre() {
@@ -27,11 +29,11 @@ public class PersonaRefactoriza {
 	}
 
 	public IAcciones[] getAcciones() {
-		return acciones;
+		return (IAcciones[]) acciones;
 	}
 
 	public void setAcciones(IAcciones[] acciones) {
-		this.acciones = acciones;
+		this.acciones = (Funciones[]) acciones;
 	}
 
 	@Override
